@@ -1,0 +1,337 @@
+:root {
+    --primary-color: #007AFF;
+    --main-font: "poppins", sans-serif;
+    --heading: 500 36px var(--main-font);
+    --sub-heading: 300 30px var(--main-font);
+}
+
+html {
+    font-family: var(--main-font);
+    /* background-color: cadetblue; */
+}
+
+.color {
+    color: var(--primary-color);
+}
+
+li {
+    list-style: none;
+}
+
+strong {
+    font-weight: 600;
+}
+
+/* Navigation Section */
+
+nav {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 30px;
+}
+
+nav img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav li {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+/* Main image & Text */
+
+.background-image {
+    background-image: url("../images/project/landingPage.jpg");
+    max-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f0f0f0;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centered-text p {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.centered-text p:first-child {
+    font: var(--heading);
+    text-transform: uppercase;
+}
+
+.centered-text p:last-child {
+    font: var(--sub-heading);
+}
+
+/* Sub Nav */
+
+.sub-nav {
+    position: absolute;
+    top: 510px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 860px;
+    height: 80px;
+    background: #F3F4F6FF;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.sub-nav li {
+    list-style: none;
+    text-align: center;
+    margin: 10px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+    position: relative;
+}
+
+.sub-nav .column:not(:last-child)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    right: 10px;
+    width: 2px;
+    background-color: #ccc;
+}
+
+.sub-nav .column:last-child::after {
+    content: url("../images/project/icons8-right-arrow-50.png");
+    margin-left: 10px;
+    position: absolute;
+    top: 52%;
+    transform: translateY(-50%);
+    right: 5px;
+}
+
+/* Quote Section */
+
+.quote-section {
+    text-align: center;
+    padding: 100px 50px;
+}
+
+.quote-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-icon {
+    color: #007AFF;
+    margin: 0 60px;
+    /* width: 70px; */
+    height: auto;
+}
+
+.quote-text {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.quote-source {
+    font-size: 20px;
+    margin: 25px;
+    position: relative;
+}
+
+.quote-source::before,
+.quote-source::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: var(--primary-color);
+    top: 50%;
+    width: 30px;
+}
+
+.quote-source::before {
+    right: 57%;
+    margin-right: 15px;
+}
+
+.quote-source::after {
+    left: 57%;
+    margin-left: 15px;
+}
+
+/* Categories Section */
+
+.categories-section {
+    margin: 0 30px;
+}
+
+.categories-section h2,
+.clubs-section h2 {
+    font: var(--heading);
+    color: var(--primary-color);
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    height: 372px;
+    /* gap: 20px; */
+}
+
+.box {
+    position: relative;
+    width: 304px;
+}
+
+.box p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.a,
+.b,
+.c,
+.d,
+.e,
+.f {
+    max-width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 4px;
+}
+
+.a {
+    background-image: url("../images/Pexel/photos/first-hands\ by\ hannah-busing.jpeg");
+}
+
+.b {
+    background-image: url("../images/Pexel/photos/second-bulb\ by\ diego-ph.jpeg");
+}
+
+.c {
+    background-image: url("../images/Pexel/third-pexels-eberhard-grossgasteiger-844297.jpg");
+}
+
+.d {
+    background-image: url("../images/project/fourth.png");
+}
+
+.e {
+    background-image: url("../images/project/fifithpexels-pixabay-461049.jpg");
+}
+
+.f {
+    background-image: url("../images/project/sixth.png");
+}
+
+/* .big-box,
+.small-box {
+    width: 335px;
+} */
+
+.small-box {
+    height: 48%;
+}
+
+.spaced {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Club Boxes Styling */
+
+.clubs-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* gap: 20px; */
+    margin: 30px;
+}
+
+.club-box {
+    width: 304px;
+    height: 372px;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    position: relative;
+}
+
+.club-box img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 4px 4px 0 0;
+    margin-bottom: 10px;
+}
+
+.club-box h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.inside-box {
+    margin-left: 15px;
+}
+
+.club-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.club-info img {
+    width: 20px;
+    height: 20px;
+    /* margin-right: 5px; */
+}
+
+.club-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 15px;
+    width: 90%;
+}
+
+.learn-more {
+    background-color: #007aff;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.icons img {
+    width: 20px;
+    height: 20px;
+    margin: 4px;
+}
