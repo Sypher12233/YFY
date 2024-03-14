@@ -239,15 +239,15 @@ nav li a {
 }
 
 .a {
-    background-image: url("../images/Pexel/photos/first-hands\ by\ hannah-busing.jpeg");
+    background-image: url("../images/project/first-hands\ by\ hannah-busing.jpeg");
 }
 
 .b {
-    background-image: url("../images/Pexel/photos/second-bulb\ by\ diego-ph.jpeg");
+    background-image: url("../images/project/second-bulb\ by\ diego-ph.jpeg");
 }
 
 .c {
-    background-image: url("../images/Pexel/third-pexels-eberhard-grossgasteiger-844297.jpg");
+    background-image: url("../images/project/third-pexels-eberhard-grossgasteiger-844297.jpg");
 }
 
 .d {
@@ -311,6 +311,7 @@ nav li a {
     font-weight: 300;
     font-size: 15px;
     margin: 18px 5px 0 0;
+    line-height: 18px;
 }
 
 .club-info {
